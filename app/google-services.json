@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "126915081567",
+    "firebase_url": "https://parallax-90b06.firebaseio.com",
+    "project_id": "parallax-90b06",
+    "storage_bucket": "parallax-90b06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126915081567:android:ddb90ee8b02a1bd7",
+        "android_client_info": {
+          "package_name": "project.parallax.emarti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126915081567-n64gos3dmck78i6l4ors6ldadrf543bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLk8Ah8lPLvQyvqv8KPARxVDyFEh4tOH0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

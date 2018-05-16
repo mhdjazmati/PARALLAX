@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="project.parallax.emarti.ui.CreateAccountActivity">
+
+    <ImageView
+        android:id="@+id/app_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@mipmap/building" />
+
+
+
+        <TextView
+            android:id="@+id/create_account_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/create_your_account"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:paddingTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:paddingTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/create_account_text">
+
+        <EditText
+            android:id="@+id/create_account_email_edit_text"
+            style="@style/SignUpEditTextStyle"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/create_account_username_edit_text"
+            style="@style/SignUpEditTextStyle"
+            android:hint="@string/user_name" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#797878">
+
+            <EditText
+                android:id="@+id/create_account_password_edit_text"
+                style="@style/SignUpEditTextStyle"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#797878">
+
+            <EditText
+                android:id="@+id/create_accoynt_confirm_password_edit_text"
+                style="@style/SignUpEditTextStyle"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="30dp"
+            android:text="@string/create_new_account"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:visibility="visible"
+            android:background="@drawable/transparent_shape"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
